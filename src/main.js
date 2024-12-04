@@ -1,4 +1,5 @@
-import { onDOMLoaded } from './js/handlers';
+import { onDOMLoaded, onRecipeListClick } from './js/handlers';
+import { refs } from './js/refs';
 
 document.addEventListener('DOMContentLoaded', onDOMLoaded);
-onDOMLoaded;
+refs.recipesList.addEventListener('click', onRecipeListClick);
